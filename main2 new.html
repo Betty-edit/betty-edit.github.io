@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game page</title>
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=A0+Tesfa+Unicode&display=swap" rel="stylesheet" />
+</head>
+<style type="text/css">
+	* {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px){
+
+.rectangle9{
+	width: 30rem;
+	height: 23.188rem;
+	top: -0.938rem;
+	position: absolute; 
+	background-color: #01051C; border-top-left-radius: 5rem; 
+	border-top-right-radius: 5rem; transform: rotate(180deg);	
+}
+.kiyuimg{
+	height:23.188rem; 
+	width: 30rem;
+	transform: rotate(180deg); border-top-left-radius: 5rem; border-top-right-radius: 5rem;
+}
+.que{
+left: 2.25rem; 
+top: 23.875rem;
+ position: absolute;
+  text-align: center;
+   color: #01051C; 
+   font-size: 1.25rem; 
+   font-family: A0 Tesfa Unicode;
+    font-weight: 400; 
+    letter-spacing: 0.038rem; 
+    word-wrap: break-word;	
+}
+.message {
+left: 5.938rem;
+ top: 28.813rem;
+  position: absolute;
+   text-align: center;
+    color: #01051C;
+     font-size: 0.938rem;
+      font-family: A0 Tesfa Unicode;
+       font-weight: 400;
+        letter-spacing: 0.021rem;
+         word-wrap: break-word;	
+}
+.clip{
+width: 22.5rem;
+ height: 6.101rem;
+ left:2rem;
+  top: 40.313rem; 
+  position: absolute;	
+}
+.answer {
+width: 9.188rem;
+ height: 1.625rem;
+ left: 3.563rem; 
+ top: 26.5rem;
+  position: absolute;
+   border-radius: 0.625rem;
+    border: 0.063px #01051C solid;	
+}
+.submitt{
+	width: 4.938rem;
+	 height: 1.558rem; 
+	 left: 13.625rem;
+	  top: 26.75rem;
+	   position: absolute;
+	    background-color: #01052C;
+	     border-radius: 1.188rem; 
+	     color: #E7E6E6;
+	      font-size: 0.938rem;
+	       font-family: Nokia Pure Headline, sans-serif; font-weight: 700;	
+	}
+.message2{
+	left: 4.063rem; 
+	top: 34.438rem;
+	 position: absolute; 
+	 text-align: center;
+	  color: #01051C; 
+	  font-size: 0.938rem; 
+	  font-family: A0 Tesfa Unicode; background-color:#01051C;
+	   color: white;
+}
+.hint{
+	width:3.75rem;
+	 height:1.875rem; 
+	 position:absolute;
+	  left: 3.125rem;
+	   top: 36.25rem; 
+	   background-color:#AF0C15; 
+	   color: #E7E6E6;
+	    font-size: 0.938rem;
+	     font-family: Nokia Pure Headline, sans-serif; 
+	     border-radius: 0.625rem;
+	 }
+}
+</style>
+<body>
+	
+  <div class="rectangle9">
+  	<img src="kiyu image.png" alt="kiyu image" class="kiyuimg">
+  </div>
+  <div class="que">እዚህ ፎቶ ላይ ስንት ቃላቶች አሉ?</div>
+  <div class="message"></div>
+  <div class="clip">
+  	<img src="Clip path group.svg" alt="heart image">
+  </div>
+  <form class="form">
+  	<input type="number" name="answer" class="answer" placeholder="Write the answer">
+  	
+  	<input type="submit" name="submit" value="Submit" class="submitt">
+  </form>
+  <div class="message2"></div>
+
+  <button class="hint">Hint</button>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "uglify-js",
+  "version": "1.0.0",
+  "description": "\"# My-Hubby-Birthday-Gift-html-css-js\"",
+  "main": "script1.js",
+  "scripts": {
+    "build-js-1": "babel src/script1.js -o dist/script1.js && uglifyjs dist/script1.js -o dist/script1.min.js",
+  "build-js-2": "babel src/script.js -o dist/script.js && uglifyjs dist/script.js -o dist/script.min.js",
+  "build": "npm run build-js-1 && npm run build-js-2",
+     "test": "node script1.js && node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Betty-edit/My-Hubby-Birthday-Gift-html-css-js.git"
+  },
+  "keywords": [
+    "hubby"
+  ],
+  "author": "betty-edit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Betty-edit/My-Hubby-Birthday-Gift-html-css-js/issues"
+  },
+  "homepage": "https://github.com/Betty-edit/My-Hubby-Birthday-Gift-html-css-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "uglify-js": "^3.17.4"
+  }
+}
